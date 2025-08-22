@@ -61,7 +61,7 @@ export default function ClassesPage() {
 
   return (
     <div className="min-h-screen">
-      <header className="border-b border-border backdrop-blur-sm">
+      <header className="sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">

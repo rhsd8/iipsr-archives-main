@@ -1,13 +1,13 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+// Note: Button and Link not needed; using custom CTA component
+import LiquidGlassButton from "@/components/liquid-glass-button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { BookOpen, Users, Shield, Search, ArrowRight, GraduationCap, Library, FileText } from "lucide-react"
+import { BookOpen, Users, Shield, Search, GraduationCap, Library, FileText } from "lucide-react"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+      <header className="sticky top-5 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -29,9 +29,11 @@ export default function HomePage() {
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
+
             {/* <Badge variant="outline" className="mb-6 text-sm font-medium">
               Trusted by Students & Educators
             </Badge> */}
+            
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 font-work-sans leading-tight">
               Your Gateway to
               <span className="text-secondary block mt-2">Academic Excellence</span>
@@ -42,12 +44,7 @@ export default function HomePage() {
               resources.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/classes">
-                <Button size="xlg" className="text-lg px-8 py-6 bg-popover hover:bg-primary rounded-full">
-                  Start Studying
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+              <LiquidGlassButton />
             </div>
           </div>
 
@@ -184,12 +181,7 @@ export default function HomePage() {
                 Join thousands of students who have enhanced their academic performance with our comprehensive note
                 library.
               </p>
-              <Link href="/classes">
-                <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-popover">
-                  Start Exploring Now
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+              <LiquidGlassButton label="Start Exploring Now" href="/classes" />
             </CardContent>
           </Card>
         </div>

@@ -25,7 +25,7 @@ export default function PremiumGradient({ children }: { children?: React.ReactNo
         className="fixed inset-0 gradient-animated"
         style={{
           background:
-            "linear-gradient(135deg, #E94F37 0%, #FFE8D6 25%, #E94F37 50%, #FFE8D6 75%, #E94F37 100%)",
+            "linear-gradient(135deg,rgb(231, 115, 97) 0%, #FFE8D6 25%,rgb(226, 131, 117) 50%, #FFE8D6 75%,rgb(229, 140, 127) 100%)",
         }}
       />
 

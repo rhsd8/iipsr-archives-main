@@ -257,7 +257,7 @@ export default function GradePage({ params }: { params: { grade: string } }) {
   if (!subjects.length) {
     return (
       <div className="min-h-screen">
-        <header className="border-b border-border bg-transparent backdrop-blur-sm">
+        <header className="sticky top-0 z-50">
           <div className="container mx-auto px-6 py-4">
             <Link href="/classes">
               <Button variant="ghost" size="sm">
@@ -277,7 +277,7 @@ export default function GradePage({ params }: { params: { grade: string } }) {
 
   return (
     <div className="min-h-screen">
-      <header className="border-b border-border bg-transparent backdrop-blur-sm">
+      <header className="sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
