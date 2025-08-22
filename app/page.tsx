@@ -54,7 +54,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 mb-20">
             <Card className="text-center border-0 bg-card/50 backdrop-blur-sm">
               <CardContent className="pt-8 pb-6">
-                <div className="text-3xl font-bold text-secondary mb-2">7</div>
+                <div className="text-3xl font-bold text-secondary mb-2">5</div>
                 <p className="text-muted-foreground font-medium">Grade Levels</p>
               </CardContent>
             </Card>

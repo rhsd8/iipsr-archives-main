@@ -14,7 +14,7 @@ export default function ClassesPage() {
       level: "Beginner",
     },
     {
-      number: 4blah,
+      number: 7,
       title: "Development Phase",
       description: "Expanding knowledge with intermediate concepts",
       subjects: 4,
