@@ -6,7 +6,7 @@ import { BookOpen, Users, Shield, Search, ArrowRight, GraduationCap, Library, Fi
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen flex flex-col">
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -52,19 +52,19 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-20">
-            <Card className="text-center border-0 bg-card/50 backdrop-blur-sm">
+            <Card className="text-center border-0 bg-transparent">
               <CardContent className="pt-8 pb-6">
                 <div className="text-3xl font-bold text-secondary mb-2">5</div>
                 <p className="text-muted-foreground font-medium">Grade Levels</p>
               </CardContent>
             </Card>
-            <Card className="text-center border-0 bg-card/50 backdrop-blur-sm">
+            <Card className="text-center border-0 bg-transparent">
               <CardContent className="pt-8 pb-6">
                 <div className="text-3xl font-bold text-secondary mb-2">25+</div>
                 <p className="text-muted-foreground font-medium">Subject Areas</p>
               </CardContent>
             </Card>
-            <Card className="text-center border-0 bg-card/50 backdrop-blur-sm">
+            <Card className="text-center border-0 bg-transparent">
               <CardContent className="pt-8 pb-6">
                 <div className="text-3xl font-bold text-secondary mb-2">100%</div>
                 <p className="text-muted-foreground font-medium">Organized</p>
@@ -74,7 +74,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-muted/30">
+      <section className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4 font-work-sans">Why Choose Our Platform?</h2>
@@ -84,7 +84,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-card">
+            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <GraduationCap className="h-8 w-8 text-secondary" />
@@ -98,7 +98,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-card">
+            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <FileText className="h-8 w-8 text-secondary" />
@@ -113,7 +113,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-card">
+            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <Shield className="h-8 w-8 text-secondary" />
@@ -128,7 +128,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-card">
+            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <Users className="h-8 w-8 text-secondary" />
@@ -142,7 +142,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-card">
+            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <BookOpen className="h-8 w-8 text-secondary" />
@@ -156,7 +156,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-card">
+            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <Search className="h-8 w-8 text-secondary" />
@@ -175,7 +175,7 @@ export default function HomePage() {
 
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-4xl text-center">
-          <Card className="border-0 bg-secondary/5 backdrop-blur-sm">
+          <Card className="border-0 bg-transparent">
             <CardContent className="py-16 px-8">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-work-sans">
                 Ready to Excel in Your Studies?
@@ -195,7 +195,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <footer className="border-t border-border bg-card/50 py-12 px-6">
+      <footer className="mt-auto border-t border-border bg-transparent py-12 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center gap-3 mb-4 md:mb-0">

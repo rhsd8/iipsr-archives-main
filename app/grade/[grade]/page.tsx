@@ -256,8 +256,8 @@ export default function GradePage({ params }: { params: { grade: string } }) {
 
   if (!subjects.length) {
     return (
-      <div className="min-h-screen bg-background">
-        <header className="border-b border-border bg-card/50 backdrop-blur-sm">
+      <div className="min-h-screen">
+        <header className="border-b border-border bg-transparent backdrop-blur-sm">
           <div className="container mx-auto px-6 py-4">
             <Link href="/classes">
               <Button variant="ghost" size="sm">
@@ -276,8 +276,8 @@ export default function GradePage({ params }: { params: { grade: string } }) {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm">
+    <div className="min-h-screen">
+      <header className="border-b border-border bg-transparent backdrop-blur-sm">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
@@ -314,17 +314,15 @@ export default function GradePage({ params }: { params: { grade: string } }) {
             return (
               <Card
                 key={subject.name}
-                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-card"
+                className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-transparent"
               >
                 <CardHeader className="pb-6">
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="p-4 bg-secondary/10 rounded-xl group-hover:bg-secondary/20 transition-colors">
-                      <IconComponent className="h-8 w-8 text-secondary" />
-                    </div>
-                    <Badge variant="outline" className="text-xs">
-                      Grade {grade}
-                    </Badge>
+                  <div className="relative flex items-center justify-between px-4 py-2 rounded-full bg-transparent overflow-hidden">
+                    <IconComponent className="h-8 w-8 text-secondary" />
                   </div>
+                  <Badge variant="outline" className="text-xs">
+                    Grade {grade}
+                  </Badge>
                   <CardTitle className="text-xl font-work-sans group-hover:text-secondary transition-colors">
                     {subject.name}
                   </CardTitle>
@@ -349,7 +347,7 @@ export default function GradePage({ params }: { params: { grade: string } }) {
         </div>
 
         <div className="mt-20">
-          <Card className="max-w-4xl mx-auto border-0 bg-muted/30">
+          <Card className="max-w-4xl mx-auto border-0 bg-transparent">
             <CardContent className="py-12 px-8 text-center">
               <h2 className="text-2xl font-bold text-foreground mb-4 font-work-sans">Study Tips for Grade {grade}</h2>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
