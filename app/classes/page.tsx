@@ -14,7 +14,7 @@ export default function ClassesPage() {
       level: "Beginner",
     },
     {
-      number: 7,
+      number: 4blah,
       title: "Development Phase",
       description: "Expanding knowledge with intermediate concepts",
       subjects: 4,
@@ -57,20 +57,7 @@ export default function ClassesPage() {
     },
   ]
 
-  const getLevelColor = (level: string) => {
-    switch (level) {
-      case "Beginner":
-        return "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
-      case "Intermediate":
-        return "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
-      case "Advanced":
-        return "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200"
-      case "Expert":
-        return "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200"
-      default:
-        return "bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200"
-    }
-  }
+  
 
   return (
     <div className="min-h-screen bg-background">
@@ -110,9 +97,8 @@ export default function ClassesPage() {
             <Link key={grade.number} href={`/grade/${grade.number}`}>
               <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full border-0 bg-card">
                 <CardHeader className="pb-4">
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center mb-4">
                     <div className="text-4xl font-bold text-secondary">{grade.number}</div>
-                    <Badge className={getLevelColor(grade.level)}>{grade.level}</Badge>
                   </div>
                   <CardTitle className="text-xl font-work-sans group-hover:text-secondary transition-colors">
                     Grade {grade.number}
@@ -141,28 +127,6 @@ export default function ClassesPage() {
               </Card>
             </Link>
           ))}
-        </div>
-
-        <div className="mt-20 text-center">
-          <Card className="max-w-4xl mx-auto border-0 bg-muted/30">
-            <CardContent className="py-12 px-8">
-              <h2 className="text-2xl font-bold text-foreground mb-4 font-work-sans">Need Help Choosing?</h2>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Each grade level contains carefully organized study materials aligned with standard curriculum
-                requirements. All resources are regularly updated by qualified educators.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="outline">
-                  <BookOpen className="mr-2 h-4 w-4" />
-                  View Sample Materials
-                </Button>
-                <Button variant="outline">
-                  <Users className="mr-2 h-4 w-4" />
-                  Contact Support
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </div>
