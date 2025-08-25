@@ -1,5 +1,6 @@
 // Note: Button and Link not needed; using custom CTA component
 import LiquidGlassButton from "@/components/liquid-glass-button"
+import SpotlightCard from "@/components/spotlight-card"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { BookOpen, Users, Shield, Search, GraduationCap, Library, FileText } from "lucide-react"
@@ -81,7 +82,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
+            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <GraduationCap className="h-8 w-8 text-secondary" />
@@ -93,9 +94,9 @@ export default function HomePage() {
                   Complete academic resources spanning all secondary education levels from Grade 6 through Grade 12.
                 </p>
               </CardContent>
-            </Card>
+            </SpotlightCard>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
+            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <FileText className="h-8 w-8 text-secondary" />
@@ -108,9 +109,9 @@ export default function HomePage() {
                   Studies.
                 </p>
               </CardContent>
-            </Card>
+            </SpotlightCard>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
+            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <Shield className="h-8 w-8 text-secondary" />
@@ -123,9 +124,9 @@ export default function HomePage() {
                   materials.
                 </p>
               </CardContent>
-            </Card>
+            </SpotlightCard>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
+            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <Users className="h-8 w-8 text-secondary" />
@@ -137,9 +138,9 @@ export default function HomePage() {
                   All materials are curated and uploaded by qualified educators ensuring academic quality and relevance.
                 </p>
               </CardContent>
-            </Card>
+            </SpotlightCard>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
+            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <BookOpen className="h-8 w-8 text-secondary" />
@@ -151,9 +152,9 @@ export default function HomePage() {
                   Regular updates ensure content remains current with educational standards and curriculum requirements.
                 </p>
               </CardContent>
-            </Card>
+            </SpotlightCard>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
+            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
                   <Search className="h-8 w-8 text-secondary" />
@@ -165,7 +166,7 @@ export default function HomePage() {
                   Intuitive interface design makes finding and accessing specific study materials quick and effortless.
                 </p>
               </CardContent>
-            </Card>
+            </SpotlightCard>
           </div>
         </div>
       </section>
