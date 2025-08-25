@@ -16,7 +16,7 @@ export default function HomePage() {
                 <Library className="h-6 w-6 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground font-work-sans">Academic Notes Library</h1>
+                <h1 className="text-xl font-bold text-foreground font-work-sans">IIPS Student Portal</h1>
                 <p className="text-sm text-muted-foreground">Professional Educational Resources</p>
               </div>
             </div>
@@ -29,7 +29,7 @@ export default function HomePage() {
 
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 mt-15">
 
             {/* <Badge variant="outline" className="mb-6 text-sm font-medium">
               Trusted by Students & Educators
@@ -61,7 +61,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
             <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
               <CardHeader className="pb-4">
                 <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
@@ -151,22 +151,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 px-6">
-        <div className="container mx-auto max-w-4xl text-center">
-          <Card className="border-0 bg-transparent">
-            <CardContent className="py-16 px-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-work-sans">
-                Ready to Excel in Your Studies?
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Join thousands of students who have enhanced their academic performance with our comprehensive note
-                library.
-              </p>
-              <LiquidGlassButton label="Start Exploring Now" href="/classes" />
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+      
 
       <footer className="mt-auto border-t border-border bg-transparent py-12 px-6">
         <div className="container mx-auto max-w-6xl">
