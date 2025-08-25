@@ -53,7 +53,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-20 px-6">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4 font-work-sans">Why Choose Our Platform?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -61,88 +61,122 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
-            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
-              <CardHeader className="pb-4">
-                <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
-                  <GraduationCap className="h-8 w-8 text-secondary" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            <SpotlightCard className="group hover:shadow-xl transition-all duration-300 border-0 bg-transparent h-full">
+              <CardHeader className="pb-3 px-8 pt-8">
+                <div className="flex items-start gap-4   mb-6">
+                  <div className="p-2 bg-secondary/10 rounded-xl flex-shrink-0 group-hover:bg-secondary/20 transition-colors">
+                    <GraduationCap className="h-7 w-7 text-secondary" />
+                  </div>
+                  <div className="flex-grow text-left">
+                    <CardTitle className="text-xl font-work-sans leading-tight mb-3">
+                      Comprehensive Coverage
+                    </CardTitle>
+                  </div>
                 </div>
-                <CardTitle className="text-xl font-work-sans">Comprehensive Coverage</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="px-8 pb-8 text-left">
+                <p className="text-muted-foreground leading-[1.7] text-base">
                   Complete academic resources spanning all secondary education levels from Grade 6 through Grade 12.
                 </p>
               </CardContent>
             </SpotlightCard>
 
-            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
-              <CardHeader className="pb-4">
-                <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
-                  <FileText className="h-8 w-8 text-secondary" />
+            <SpotlightCard className="group hover:shadow-xl transition-all duration-300 border-0 bg-transparent h-full">
+              <CardHeader className="pb-3 px-8 pt-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="p-4 bg-secondary/10 rounded-xl flex-shrink-0 group-hover:bg-secondary/20 transition-colors">
+                    <FileText className="h-7 w-7 text-secondary" />
+                  </div>
+                  <div className="flex-grow text-left">
+                    <CardTitle className="text-xl font-work-sans leading-tight mb-3">
+                      Subject Organization
+                    </CardTitle>
+                  </div>
                 </div>
-                <CardTitle className="text-xl font-work-sans">Subject Organization</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
-                  Systematically organized by subject areas including Mathematics, Sciences, Languages, and Social
-                  Studies.
+              <CardContent className="px-8 pb-8 text-left">
+                <p className="text-muted-foreground leading-[1.7] text-base">
+                  Systematically organized by subject areas including Mathematics, Sciences, Languages, and Social Studies.
                 </p>
               </CardContent>
             </SpotlightCard>
 
-            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
-              <CardHeader className="pb-4">
-                <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
-                  <Shield className="h-8 w-8 text-secondary" />
+            <SpotlightCard className="group hover:shadow-xl transition-all duration-300 border-0 bg-transparent h-full">
+              <CardHeader className="pb-3 px-8 pt-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="p-4 bg-secondary/10 rounded-xl flex-shrink-0 group-hover:bg-secondary/20 transition-colors">
+                    <Shield className="h-7 w-7 text-secondary" />
+                  </div>
+                  <div className="flex-grow text-left">
+                    <CardTitle className="text-xl font-work-sans leading-tight mb-3">
+                      Secure Access
+                    </CardTitle>
+                  </div>
                 </div>
-                <CardTitle className="text-xl font-work-sans">Secure Access</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
-                  Reliable Google Drive integration ensures secure storage and instant access to all educational
-                  materials.
+              <CardContent className="px-8 pb-8 text-left">
+                <p className="text-muted-foreground leading-[1.7] text-base">
+                  Reliable Google Drive integration ensures secure storage and instant access to all educational materials.
                 </p>
               </CardContent>
             </SpotlightCard>
 
-            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
-              <CardHeader className="pb-4">
-                <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
-                  <Users className="h-8 w-8 text-secondary" />
+            <SpotlightCard className="group hover:shadow-xl transition-all duration-300 border-0 bg-transparent h-full">
+              <CardHeader className="pb-3 px-8 pt-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="p-4 bg-secondary/10 rounded-xl flex-shrink-0 group-hover:bg-secondary/20 transition-colors">
+                    <Users className="h-7 w-7 text-secondary" />
+                  </div>
+                  <div className="flex-grow text-left">
+                    <CardTitle className="text-xl font-work-sans leading-tight mb-3">
+                      Educator Approved
+                    </CardTitle>
+                  </div>
                 </div>
-                <CardTitle className="text-xl font-work-sans">Educator Approved</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="px-8 pb-8 text-left">
+                <p className="text-muted-foreground leading-[1.7] text-base">
                   All materials are curated and uploaded by qualified educators ensuring academic quality and relevance.
                 </p>
               </CardContent>
             </SpotlightCard>
 
-            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
-              <CardHeader className="pb-4">
-                <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
-                  <BookOpen className="h-8 w-8 text-secondary" />
+            <SpotlightCard className="group hover:shadow-xl transition-all duration-300 border-0 bg-transparent h-full">
+              <CardHeader className="pb-3 px-8 pt-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="p-4 bg-secondary/10 rounded-xl flex-shrink-0 group-hover:bg-secondary/20 transition-colors">
+                    <BookOpen className="h-7 w-7 text-secondary" />
+                  </div>
+                  <div className="flex-grow text-left">
+                    <CardTitle className="text-xl font-work-sans leading-tight mb-3">
+                      Always Updated
+                    </CardTitle>
+                  </div>
                 </div>
-                <CardTitle className="text-xl font-work-sans">Always Updated</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="px-8 pb-8 text-left">
+                <p className="text-muted-foreground leading-[1.7] text-base">
                   Regular updates ensure content remains current with educational standards and curriculum requirements.
                 </p>
               </CardContent>
             </SpotlightCard>
 
-            <SpotlightCard className="group hover:shadow-lg transition-all duration-300 border-0 bg-transparent">
-              <CardHeader className="pb-4">
-                <div className="p-3 bg-secondary/10 rounded-lg w-fit mb-4 group-hover:bg-secondary/20 transition-colors">
-                  <Search className="h-8 w-8 text-secondary" />
+            <SpotlightCard className="group hover:shadow-xl transition-all duration-300 border-0 bg-transparent h-full">
+              <CardHeader className="pb-3 px-8 pt-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="p-4 bg-secondary/10 rounded-xl flex-shrink-0 group-hover:bg-secondary/20 transition-colors">
+                    <Search className="h-7 w-7 text-secondary" />
+                  </div>
+                  <div className="flex-grow text-left">
+                    <CardTitle className="text-xl font-work-sans leading-tight mb-3">
+                      Easy Navigation
+                    </CardTitle>
+                  </div>
                 </div>
-                <CardTitle className="text-xl font-work-sans">Easy Navigation</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="px-8 pb-8 text-left">
+                <p className="text-muted-foreground leading-[1.7] text-base">
                   Intuitive interface design makes finding and accessing specific study materials quick and effortless.
                 </p>
               </CardContent>
