@@ -48,27 +48,7 @@ export default function HomePage() {
               <LiquidGlassButton />
             </div>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-20">
-            <Card className="text-center border-0 bg-transparent">
-              <CardContent className="pt-8 pb-6">
-                <div className="text-3xl font-bold text-secondary mb-2">5</div>
-                <p className="text-muted-foreground font-medium">Grade Levels</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center border-0 bg-transparent">
-              <CardContent className="pt-8 pb-6">
-                <div className="text-3xl font-bold text-secondary mb-2">25+</div>
-                <p className="text-muted-foreground font-medium">Subject Areas</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center border-0 bg-transparent">
-              <CardContent className="pt-8 pb-6">
-                <div className="text-3xl font-bold text-secondary mb-2">100%</div>
-                <p className="text-muted-foreground font-medium">Organized</p>
-              </CardContent>
-            </Card>
-          </div>
+          
         </div>
       </section>
 
