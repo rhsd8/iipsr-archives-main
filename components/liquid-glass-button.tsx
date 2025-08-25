@@ -17,16 +17,13 @@ export default function LiquidGlassButton({
   return (
     <>
       <style jsx>{`
-        @keyframes ripple {
-          0% { transform: scale(0); opacity: 1; }
-          100% { transform: scale(4); opacity: 0; }
-        }
+       
         .liquid-glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px) saturate(180%); position: relative; overflow: hidden; }
         .liquid-glass::before { content: ""; position: absolute; inset: 0; background: rgba(255, 255, 255, 0.05); border-radius: inherit; }
         .liquid-glass:hover { background: rgba(255, 255, 255, 0.15); box-shadow: 0 20px 60px rgba(233, 79, 55, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.1); }
         .liquid-glass:hover::before { background: rgba(255, 255, 255, 0.08); }
         .liquid-glass:active { transform: scale(0.98); background: rgba(255, 255, 255, 0.05); }
-        .ripple-effect { position: absolute; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, transparent 70%); animation: ripple 0.6s linear; pointer-events: none; }
+        
       `}</style>
 
       <Link href={href} className="inline-block">
