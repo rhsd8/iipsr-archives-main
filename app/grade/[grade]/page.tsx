@@ -10,7 +10,6 @@ interface Subject {
   name: string
   icon: React.ComponentType<{ className?: string }>
   driveUrl: string
-  description: string
 }
 
 interface GradeSubjects {
@@ -18,234 +17,179 @@ interface GradeSubjects {
 }
 
 const gradeSubjects: GradeSubjects = {
-  "6": [
-    {
-      name: "Mathematics",
-      icon: Calculator,
-      driveUrl: "https://drive.google.com/drive/folders/MATH_GRADE6_FOLDER_ID",
-      description: "Basic arithmetic and geometry",
-    },
-    {
-      name: "Science",
-      icon: Microscope,
-      driveUrl: "https://drive.google.com/drive/folders/SCIENCE_GRADE6_FOLDER_ID",
-      description: "Introduction to scientific concepts",
-    },
-    {
-      name: "English",
-      icon: BookOpen,
-      driveUrl: "https://drive.google.com/drive/folders/ENGLISH_GRADE6_FOLDER_ID",
-      description: "Language and literature basics",
-    },
-    {
-      name: "Social Studies",
-      icon: Globe,
-      driveUrl: "https://drive.google.com/drive/folders/SOCIAL_GRADE6_FOLDER_ID",
-      description: "History and geography",
-    },
-  ],
-  "7": [
-    {
-      name: "Mathematics",
-      icon: Calculator,
-      driveUrl: "https://drive.google.com/drive/folders/MATH_GRADE7_FOLDER_ID",
-      description: "Algebra and advanced arithmetic",
-    },
-    {
-      name: "Science",
-      icon: Microscope,
-      driveUrl: "https://drive.google.com/drive/folders/SCIENCE_GRADE7_FOLDER_ID",
-      description: "Physics, chemistry, and biology basics",
-    },
-    {
-      name: "English",
-      icon: BookOpen,
-      driveUrl: "https://drive.google.com/drive/folders/ENGLISH_GRADE7_FOLDER_ID",
-      description: "Advanced language skills",
-    },
-    {
-      name: "Social Studies",
-      icon: Globe,
-      driveUrl: "https://drive.google.com/drive/folders/SOCIAL_GRADE7_FOLDER_ID",
-      description: "World history and cultures",
-    },
-  ],
   "8": [
     {
       name: "Mathematics",
       icon: Calculator,
-      driveUrl: "https://drive.google.com/drive/folders/MATH_GRADE8_FOLDER_ID",
-      description: "Pre-algebra and geometry",
+      driveUrl: "https://drive.google.com/drive/folders/1mmPWQCzZTyIAirrk-QKA8fKEg46faNDN",
     },
     {
       name: "Science",
       icon: Microscope,
-      driveUrl: "https://drive.google.com/drive/folders/SCIENCE_GRADE8_FOLDER_ID",
-      description: "Integrated science concepts",
+      driveUrl: "https://drive.google.com/drive/folders/1PGLgXrOPc2ffv0TZYJJ_lWxZZYSCsbh_",
     },
     {
       name: "English",
       icon: BookOpen,
-      driveUrl: "https://drive.google.com/drive/folders/ENGLISH_GRADE8_FOLDER_ID",
-      description: "Literature and composition",
+      driveUrl: "https://drive.google.com/drive/folders/1uHaPNq2hgrGdVf5MjAKM1kH7R5lav1Iu",
     },
     {
-      name: "Social Studies",
+      name: "Social Science",
       icon: Globe,
-      driveUrl: "https://drive.google.com/drive/folders/SOCIAL_GRADE8_FOLDER_ID",
-      description: "Modern history and civics",
+      driveUrl: "https://drive.google.com/drive/folders/1sPhvLOV_jaA5gvf97OxwmTeNxSDJZu73",
+    },
+    {
+      name: "Hindi",
+      icon: Globe,
+      driveUrl: "https://drive.google.com/drive/folders/1LaKHbu3gevIyNPZ5draRoYluXCR8BXb3",
+    },
+    {
+      name: "3rd Language",
+      icon: Globe,
+      driveUrl: "https://drive.google.com/drive/folders/1oiScT3J_cXwEhSxxuoxWDSauvCLWyWSR",
     },
   ],
   "9": [
     {
       name: "Mathematics",
       icon: Calculator,
-      driveUrl: "https://drive.google.com/drive/folders/MATH_GRADE9_FOLDER_ID",
-      description: "Algebra I and coordinate geometry",
+      driveUrl: "https://drive.google.com/drive/folders/1fUaItBCq-wDbWHun1zIYiRRunMv2JtN0?usp=drive_link",
     },
     {
       name: "Physics",
       icon: Atom,
-      driveUrl: "https://drive.google.com/drive/folders/PHYSICS_GRADE9_FOLDER_ID",
-      description: "Mechanics and basic physics",
+      driveUrl: "https://drive.google.com/drive/folders/1N4gqcbijgJSL3VK7Gbbu7bRMunBphC2b?usp=drive_link",
     },
     {
       name: "Chemistry",
       icon: Atom,
-      driveUrl: "https://drive.google.com/drive/folders/CHEMISTRY_GRADE9_FOLDER_ID",
-      description: "Atomic structure and reactions",
+      driveUrl: "https://drive.google.com/drive/folders/1Aez1X4jWVeG_IOXR1rh4-LwB2VRcpiG0?usp=drive_link",
     },
     {
       name: "Biology",
       icon: Microscope,
-      driveUrl: "https://drive.google.com/drive/folders/BIOLOGY_GRADE9_FOLDER_ID",
-      description: "Cell biology and life processes",
+      driveUrl: "https://drive.google.com/drive/folders/1YzkCUvJa6-xg6eWFJPog5YltNowon5go?usp=drive_link",
     },
     {
       name: "English",
       icon: BookOpen,
-      driveUrl: "https://drive.google.com/drive/folders/ENGLISH_GRADE9_FOLDER_ID",
-      description: "Advanced literature studies",
+      driveUrl: "https://drive.google.com/drive/folders/1wUDmam7cdaKUsG0oApq1FIMmG6UazWGN?usp=drive_link",
     },
     {
-      name: "Social Studies",
+      name: "Social Science",
       icon: Globe,
-      driveUrl: "https://drive.google.com/drive/folders/SOCIAL_GRADE9_FOLDER_ID",
-      description: "Contemporary world issues",
+      driveUrl: "https://drive.google.com/drive/folders/1czZ7vHuTn9FNnwulNlmUFe8DqEWKrfy1?usp=drive_link",
+    },
+    {
+      name: "2nd Language",
+      icon: Globe,
+      driveUrl: "https://drive.google.com/drive/folders/11o634DGFfny_65DQcGo2bpboInmAMfiE?usp=drive_link",
     },
   ],
   "10": [
     {
       name: "Mathematics",
       icon: Calculator,
-      driveUrl: "https://drive.google.com/drive/folders/MATH_GRADE10_FOLDER_ID",
-      description: "Algebra II and trigonometry",
+      driveUrl: "https://drive.google.com/drive/folders/1qfP2Xyz-yPBRiYJYt52KCgYCHVuUWTJd?usp=drive_link",
     },
     {
       name: "Physics",
       icon: Atom,
-      driveUrl: "https://drive.google.com/drive/folders/PHYSICS_GRADE10_FOLDER_ID",
-      description: "Electricity and magnetism",
+      driveUrl: "https://drive.google.com/drive/folders/1O8h4W5cLnVmAsZbXCjLp9xoriYlYmp8b?usp=drive_link",
     },
     {
       name: "Chemistry",
       icon: Atom,
-      driveUrl: "https://drive.google.com/drive/folders/CHEMISTRY_GRADE10_FOLDER_ID",
-      description: "Organic and inorganic chemistry",
+      driveUrl: "https://drive.google.com/drive/folders/1uX0DaLtfafGpRfP4Ah64-_oNCrWF3WWI?usp=drive_link",
     },
     {
       name: "Biology",
       icon: Microscope,
-      driveUrl: "https://drive.google.com/drive/folders/BIOLOGY_GRADE10_FOLDER_ID",
-      description: "Genetics and evolution",
+      driveUrl: "https://drive.google.com/drive/folders/1dV_PktTFRle8CKog4VhM72nNEeoh0v5k?usp=drive_link",
     },
     {
       name: "English",
       icon: BookOpen,
-      driveUrl: "https://drive.google.com/drive/folders/ENGLISH_GRADE10_FOLDER_ID",
-      description: "Critical analysis and writing",
+      driveUrl: "https://drive.google.com/drive/folders/1gjACDMa43HrtR0wRkUcaFXNKSvak2OQq?usp=drive_link",
     },
     {
-      name: "Social Studies",
+      name: "Social Science",
       icon: Globe,
-      driveUrl: "https://drive.google.com/drive/folders/SOCIAL_GRADE10_FOLDER_ID",
-      description: "Economics and political science",
+      driveUrl: "https://drive.google.com/drive/folders/1oucUgexLWeegblq1y8DeKo28vauZP2e4?usp=drive_link",
     },
   ],
   "11": [
     {
       name: "Mathematics",
       icon: Calculator,
-      driveUrl: "https://drive.google.com/drive/folders/MATH_GRADE11_FOLDER_ID",
-      description: "Calculus and advanced algebra",
+      driveUrl: "https://drive.google.com/drive/folders/1B6geYe9aPnoSp207ZyNZ2cGv0uNmK66R?usp=drive_link",
     },
     {
       name: "Physics",
       icon: Atom,
-      driveUrl: "https://drive.google.com/drive/folders/PHYSICS_GRADE11_FOLDER_ID",
-      description: "Waves, optics, and modern physics",
+      driveUrl: "https://drive.google.com/drive/folders/1bb4TuccaFiFBBT5tMVyUKxM6czpHjGNY?usp=drive_link",
     },
     {
       name: "Chemistry",
       icon: Atom,
-      driveUrl: "https://drive.google.com/drive/folders/CHEMISTRY_GRADE11_FOLDER_ID",
-      description: "Physical and analytical chemistry",
+      driveUrl: "https://drive.google.com/drive/folders/1dLb06igQfC30wlcAlcdz7Gljl-wGWaFz?usp=drive_link",
     },
     {
       name: "Biology",
       icon: Microscope,
-      driveUrl: "https://drive.google.com/drive/folders/BIOLOGY_GRADE11_FOLDER_ID",
-      description: "Molecular biology and ecology",
+      driveUrl: "https://drive.google.com/drive/folders/1NhGdIhmgDV7P-fFBNs21UAeUc6NiPJ3o?usp=drive_link",
     },
     {
       name: "English",
       icon: BookOpen,
-      driveUrl: "https://drive.google.com/drive/folders/ENGLISH_GRADE11_FOLDER_ID",
-      description: "Advanced composition and rhetoric",
+      driveUrl: "https://drive.google.com/drive/folders/1Z84QYpxG5kPP3V26MPpiO-161HlkIRgl?usp=drive_link",
     },
     {
       name: "Computer Science",
       icon: Computer,
-      driveUrl: "https://drive.google.com/drive/folders/CS_GRADE11_FOLDER_ID",
-      description: "Programming and algorithms",
+      driveUrl: "https://drive.google.com/drive/folders/1Hw6H4uJJ1Dgp656Rt19V6IzUr7J6usGk?usp=drive_link",
+    },
+    {
+      name: "Physical Education",
+      icon: Computer,
+      driveUrl: "https://drive.google.com/drive/folders/11_DRXHObWpf6Z3bSG8d6eWMPrTpuA8GC?usp=drive_link",
     },
   ],
   "12": [
     {
       name: "Mathematics",
       icon: Calculator,
-      driveUrl: "https://drive.google.com/drive/folders/MATH_GRADE12_FOLDER_ID",
-      description: "Advanced calculus and statistics",
+      driveUrl: "https://drive.google.com/drive/folders/1eM6KoSPANRsw8FR9IPM130t1F_WxGcGR?usp=sharing",
     },
     {
       name: "Physics",
       icon: Atom,
-      driveUrl: "https://drive.google.com/drive/folders/PHYSICS_GRADE12_FOLDER_ID",
-      description: "Quantum physics and relativity",
+      driveUrl: "https://drive.google.com/drive/folders/1MUPm9k2Sjo0lHH6WeFq_Zph3gUFrUCUV?usp=drive_link",
     },
     {
       name: "Chemistry",
       icon: Atom,
-      driveUrl: "https://drive.google.com/drive/folders/CHEMISTRY_GRADE12_FOLDER_ID",
-      description: "Advanced organic chemistry",
+      driveUrl: "https://drive.google.com/drive/folders/15LpJiQIzI9PS3JlcQzsFlQlt5JkZqMEg?usp=drive_link",
     },
     {
       name: "Biology",
       icon: Microscope,
-      driveUrl: "https://drive.google.com/drive/folders/BIOLOGY_GRADE12_FOLDER_ID",
-      description: "Biotechnology and advanced genetics",
+      driveUrl: "https://drive.google.com/drive/folders/1do1PpmXPcbcEwG0XSVv58ef1ODwFTkPu?usp=drive_link",
     },
     {
       name: "English",
       icon: BookOpen,
-      driveUrl: "https://drive.google.com/drive/folders/ENGLISH_GRADE12_FOLDER_ID",
-      description: "Literary criticism and research",
+      driveUrl: "https://drive.google.com/drive/folders/19oJSLmGGbArZfwBEVR7bahYfr091_XgL?usp=drive_link",
     },
     {
       name: "Computer Science",
       icon: Computer,
-      driveUrl: "https://drive.google.com/drive/folders/CS_GRADE12_FOLDER_ID",
-      description: "Data structures and software engineering",
+      driveUrl: "",
+    },
+    {
+      name: "Physical Education",
+      icon: Computer,
+      driveUrl: "https://drive.google.com/drive/folders/19VubskagHT5FkLs798slgUJkCCJfBFie?usp=drive_link  ",
     },
   ],
 }
@@ -269,7 +213,7 @@ export default function GradePage({ params }: { params: { grade: string } }) {
         </header>
         <div className="container mx-auto px-6 py-12 text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4">Grade {grade} Not Available</h1>
-          <p className="text-muted-foreground">Please select a valid grade from 6 to 12.</p>
+          <p className="text-muted-foreground">Please select a valid grade from 8 to 12.</p>
         </div>
       </div>
     )
@@ -326,7 +270,6 @@ export default function GradePage({ params }: { params: { grade: string } }) {
                   <CardTitle className="text-xl font-work-sans group-hover:text-secondary transition-colors">
                     {subject.name}
                   </CardTitle>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{subject.description}</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">

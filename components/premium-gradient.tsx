@@ -1,44 +1,102 @@
 "use client"
 import React from "react"
 
-// Premium animated gradient background wrapper
+// Premium animated background wrapper with blurred circles
 // Usage: <PremiumGradient>...app content...</PremiumGradient>
-// Renders a full-viewport animated gradient with a subtle grain overlay
+// Renders a full-viewport solid background with animated blurred circles
 // and places children above it.
 export default function PremiumGradient({ children }: { children?: React.ReactNode }) {
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
       {/* Custom CSS for animations */}
       <style jsx global>{`
-        @keyframes premiumFlow {
-          0%, 100% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
+        @keyframes floatRightCircle {
+          0% { 
+            transform: translate(20vw, -80vh) scaleX(0.8) scaleY(1.2);
+          }
+          25% { 
+            transform: translate(-20vw, -40vh) scaleX(1.2) scaleY(0.8);
+          }
+          50% { 
+            transform: translate(10vw, 80vh) scaleX(0.9) scaleY(1.1);
+          }
+          75% { 
+            transform: translate(-30vw, 40vh) scaleX(1.1) scaleY(0.9);
+          }
+          100% { 
+            transform: translate(20vw, -80vh) scaleX(0.8) scaleY(1.2);
+          }
         }
-        .gradient-animated {
-          background-size: 400% 400% !important;
-          animation: premiumFlow 15s ease-in-out infinite !important;
+        
+        @keyframes floatLeftCircle {
+          0% { 
+            transform: translate(-20vw, 80vh) scaleX(1.1) scaleY(0.8);
+          }
+          25% { 
+            transform: translate(30vw, 40vh) scaleX(0.8) scaleY(1.2);
+          }
+          50% { 
+            transform: translate(-10vw, -80vh) scaleX(1.2) scaleY(0.9);
+          }
+          75% { 
+            transform: translate(20vw, -40vh) scaleX(0.9) scaleY(1.1);
+          }
+          100% { 
+            transform: translate(-20vw, 80vh) scaleX(1.1) scaleY(0.8);
+          }
+        }
+        
+        .circle-animated-right {
+          animation: floatRightCircle 40s ease-in-out infinite;
+        }
+        
+        .circle-animated-left {
+          animation: floatLeftCircle 40s ease-in-out infinite;
         }
       `}</style>
 
-      {/* Fixed gradient background layer */}
+      {/* Fixed solid background layer */}
       <div
-        className="fixed inset-0 gradient-animated"
+        className="fixed inset-0"
         style={{
-          background:
-            "linear-gradient(135deg,rgb(231, 115, 97) 0%, #FFE8D6 25%,rgb(226, 131, 117) 50%, #FFE8D6 75%,rgb(229, 140, 127) 100%)",
+          backgroundColor: "#FFE8D6",
         }}
       />
 
-      {/* Minimal grain texture overlay */}
+      {/* Animated blurred circles */}
       <div
-        className="pointer-events-none fixed inset-0"
+        className="fixed rounded-full circle-animated-right"
         style={{
-          opacity: 0.08,
-          backgroundImage:
-            "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.45' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E\")",
-          backgroundSize: "128px 128px",
+          top: '50%',
+          right: '0%',
+          width: '1440px',
+          height: '1440px',
+          marginTop: '-720px',
+          marginRight: '-720px',
+          backgroundColor: "rgb(231, 115, 97)",
+          filter: "blur(120px)",
+          opacity: 0.6,
         }}
       />
+      
+      <div
+        className="fixed rounded-full circle-animated-left"
+        style={{
+          top: '50%',
+          left: '0%',
+          width: '1260px',
+          height: '1260px',
+          marginTop: '-630px',
+          marginLeft: '-630px',
+          backgroundColor: "rgb(231, 115, 97)",
+          filter: "blur(110px)",
+          opacity: 0.7,
+        }}
+      />
+      
+      
+      
+      
 
       {/* Content layer */}
       <div className="relative z-10">{children}</div>

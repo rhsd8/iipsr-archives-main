@@ -7,51 +7,32 @@ import { ArrowLeft, Users, BookOpen, Library, ArrowRight } from "lucide-react"
 export default function ClassesPage() {
   const grades = [
     {
-      number: 6,
-      title: "Foundation Year",
-      description: "Building fundamental concepts across core subjects",
-      subjects: 4,
-      level: "Beginner",
-    },
-    {
-      number: 7,
-      title: "Development Phase",
-      description: "Expanding knowledge with intermediate concepts",
-      subjects: 4,
-      level: "Intermediate",
-    },
-    {
       number: 8,
       title: "Core Concepts",
-      description: "Strengthening understanding of essential principles",
       subjects: 4,
       level: "Intermediate",
     },
     {
       number: 9,
       title: "Advanced Learning",
-      description: "Introduction to specialized subject areas",
       subjects: 6,
       level: "Advanced",
     },
     {
       number: 10,
       title: "Board Preparation",
-      description: "Comprehensive preparation for board examinations",
       subjects: 6,
       level: "Advanced",
     },
     {
       number: 11,
       title: "Specialization",
-      description: "Focus on chosen academic streams and career paths",
       subjects: 6,
       level: "Expert",
     },
     {
       number: 12,
       title: "Final Year",
-      description: "Advanced concepts and university preparation",
       subjects: 6,
       level: "Expert",
     },
@@ -106,8 +87,6 @@ export default function ClassesPage() {
                   <p className="text-sm font-medium text-muted-foreground">{grade.title}</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-sm text-muted-foreground leading-relaxed">{grade.description}</p>
-
                   <div className="flex items-center justify-between text-sm">
                     <div className="relative flex items-center justify-between px-4 py-2 rounded-full bg-transparent overflow-hidden">
                       <BookOpen className="h-4 w-4" />

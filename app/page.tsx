@@ -41,7 +41,7 @@ export default function HomePage() {
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
               Access a comprehensive digital library of meticulously organized academic notes and educational materials.
-              Designed for students from Grade 6 to Grade 12, our platform ensures seamless access to high-quality study
+              Designed for students from Grade 8 to Grade 12, our platform ensures seamless access to high-quality study
               resources.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -77,7 +77,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent className="px-8 pb-8 text-left">
                 <p className="text-muted-foreground leading-[1.7] text-base">
-                  Complete academic resources spanning all secondary education levels from Grade 6 through Grade 12.
+                  Complete academic resources spanning all secondary education levels from Grade 8 through Grade 12.
                 </p>
               </CardContent>
             </SpotlightCard>
@@ -187,7 +187,7 @@ export default function HomePage() {
 
       
 
-      <footer className="mt-auto border-t border-border bg-transparent py-12 px-6">
+      <footer className="mt-auto bg-transparent py-10  px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center gap-3 mb-4 md:mb-0">
@@ -195,12 +195,12 @@ export default function HomePage() {
                 <Library className="h-5 w-5 text-primary-foreground" />
               </div>
               <div>
-                <p className="font-semibold text-foreground">Academic Notes Library</p>
-                <p className="text-sm text-muted-foreground">Excellence in Education</p>
+                <p className="font-semibold text-foreground">IIPS Student Portal</p>
+                <p className="text-sm text-muted-foreground">Professional Educational Resources</p>
               </div>
             </div>
             {/* <p className="text-sm text-muted-foreground">
-              © 2024 Academic Notes Library. Empowering students worldwide.
+              © 2025 IIPS Student Portal.
             </p> */}
           </div>
         </div>

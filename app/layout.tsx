@@ -7,7 +7,7 @@ import PremiumGradient from "@/components/premium-gradient"
 
 export const metadata: Metadata = {
   title: "School Notes Library",
-  description: "A central place for students from Grade 6 to Grade 12 to access their class notes easily.",
+  description: "A central place for students from Grade 8 to Grade 12 to access their class notes easily.",
   generator: "v0.app",
 }
 
