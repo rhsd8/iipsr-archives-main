@@ -55,7 +55,7 @@ return (
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}
    className={cn(
-  "relative overflow-hidden rounded-xl border border-white/10 bg-white/[0.02] backdrop-blur-2xl backdrop-saturate-150 p-1 shadow-[0_8px_32px_rgba(0,0,0,0.1)]",
+  "relative overflow-hidden rounded-xl border border-white/10 bg-white/[0.02] backdrop-blur-2xl backdrop-saturate-150 px-2  py-7 shadow-[0_8px_32px_rgba(0,0,0,0.1)]",
   className
 )}
 

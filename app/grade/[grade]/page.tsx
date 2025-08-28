@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, ExternalLink } from "lucide-react"
 import { Calculator, Atom, Microscope, BookOpen, Globe, Computer, Library, Users } from "lucide-react"
+import SpotlightCard from "@/components/spotlight-card"
 
 interface Subject {
   name: string
@@ -256,7 +257,7 @@ export default function GradePage({ params }: { params: { grade: string } }) {
           {subjects.map((subject) => {
             const IconComponent = subject.icon
             return (
-              <Card
+              <SpotlightCard
                 key={subject.name}
                 className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-transparent"
               >
@@ -284,13 +285,13 @@ export default function GradePage({ params }: { params: { grade: string } }) {
                     </Button>
                   </a>
                 </CardContent>
-              </Card>
+              </SpotlightCard>
             )
           })}
         </div>
 
         <div className="mt-20">
-          <Card className="max-w-4xl mx-auto border-0 bg-transparent">
+          <SpotlightCard className="max-w-4xl mx-auto border-0 bg-transparent">
             <CardContent className="py-12 px-8 text-center">
               <h2 className="text-2xl font-bold text-foreground mb-4 font-work-sans">Study Tips for Grade {grade}</h2>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
@@ -321,7 +322,7 @@ export default function GradePage({ params }: { params: { grade: string } }) {
                 </div>
               </div>
             </CardContent>
-          </Card>
+          </SpotlightCard>
         </div>
       </div>
     </div>

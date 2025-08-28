@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, Users, BookOpen, Library, ArrowRight } from "lucide-react"
+import SpotlightCard from "@/components/spotlight-card"
 
 export default function ClassesPage() {
   const grades = [
@@ -76,7 +77,7 @@ export default function ClassesPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {grades.map((grade) => (
             <Link key={grade.number} href={`/grade/${grade.number}`}>
-              <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full border-0 bg-transparent">
+              <SpotlightCard className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full border-0 bg-transparent">
                 <CardHeader className="pb-4">
                   <div className="flex items-center mb-4">
                     <div className="text-4xl font-bold text-secondary">{grade.number}</div>
@@ -103,7 +104,7 @@ export default function ClassesPage() {
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </CardContent>
-              </Card>
+              </SpotlightCard>
             </Link>
           ))}
         </div>
