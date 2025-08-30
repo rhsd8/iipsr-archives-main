@@ -7,7 +7,7 @@ import React from "react"
 // and places children above it.
 export default function PremiumGradient({ children }: { children?: React.ReactNode }) {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <div className="relative w-full min-h-full overflow-hidden" style={{ minHeight: 'inherit' }}>
       {/* Custom CSS for animations */}
       <style jsx global>{`
         @keyframes floatRightCircle {
