@@ -10,7 +10,38 @@ import { motion } from "framer-motion"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
+      <style jsx>{`
+        .liquid-glass { 
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(20px) saturate(180%);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          position: relative;
+          overflow: hidden;
+        }
+        .liquid-glass::before { 
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: inherit;
+        }
+        .liquid-glass:hover { 
+          background: rgba(255, 255, 255, 0.15);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          box-shadow: 0 20px 60px rgba(233, 79, 55, 0.3), 
+                      inset 0 1px 0 rgba(255, 255, 255, 0.4), 
+                      inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        }
+        .liquid-glass:hover::before { 
+          background: rgba(255, 255, 255, 0.08);
+        }
+        .liquid-glass:active { 
+          transform: scale(0.98);
+          background: rgba(255, 255, 255, 0.05);
+        }
+      `}</style>
+      <div className="min-h-screen flex flex-col">
       <header className="sticky top-5 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -270,19 +301,19 @@ export default function HomePage() {
                 </div>
               </div>
               
-              {/* Action Buttons - using regular buttons, not liquid glass */}
+              {/* Action Buttons with liquid glass effect */}
               <div className="flex flex-wrap gap-3">
-                <button className="inline-flex items-center gap-2 bg-card hover:bg-accent text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-colors border border-border">
-                  <FileText className="h-4 w-4" />
-                  FAQ's
+                <button className="liquid-glass inline-flex items-center gap-2 text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300">
+                  <FileText className="h-4 w-4 relative z-10" />
+                  <span className="relative z-10">FAQ's</span>
                 </button>
-                <button className="inline-flex items-center gap-2 bg-card hover:bg-accent text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-colors border border-border">
-                  <Users className="h-4 w-4" />
-                  Feedback
+                <button className="liquid-glass inline-flex items-center gap-2 text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300">
+                  <Users className="h-4 w-4 relative z-10" />
+                  <span className="relative z-10">Feedback</span>
                 </button>
-                <button className="inline-flex items-center gap-2 bg-card hover:bg-accent text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-colors border border-border">
-                  <Shield className="h-4 w-4" />
-                  Contact Us
+                <button className="liquid-glass inline-flex items-center gap-2 text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300">
+                  <Shield className="h-4 w-4 relative z-10" />
+                  <span className="relative z-10">Contact Us</span>
                 </button>
               </div>
             </div>
@@ -294,19 +325,19 @@ export default function HomePage() {
                 Visit our main school website for admissions, events, and institutional information.
               </p>
               <a 
-                href="https://iipsr.edu.pk" 
+                href="https://iipsr.edu.sa/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/80 text-secondary-foreground px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                className="liquid-glass inline-flex items-center gap-2 text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
               >
-                Visit IIPSR Website
-                <ArrowRight className="h-4 w-4" />
+                <span className="relative z-10">Visit IIPSR Website</span>
+                <ArrowRight className="h-4 w-4 relative z-10" />
               </a>
             </div>
           </div>
 
           {/* Bottom Section */}
-          <div className="pt-6 border-t border-border">
+          <div className="pt-6 border-t border-border/30">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-sm text-muted-foreground">
                 © 2025 IIPSR Student Portal. Educational resources platform.
@@ -320,6 +351,7 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   )
 }
