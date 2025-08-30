@@ -41,7 +41,7 @@ export default function HomePage() {
           background: rgba(255, 255, 255, 0.05);
         }
       `}</style>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-full flex flex-col">
       <header className="sticky top-5 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -63,20 +63,20 @@ export default function HomePage() {
 
       <section className="mt-12 py-12 px-4 sm:mt-16 sm:py-20 sm:px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12 sm:mb-16">
+          <div className="flex flex-col items-center justify-center text-center mb-12 sm:mb-16">
 
             {/* <Badge variant="outline" className="mb-6 text-sm font-medium">
               Trusted by Students & Educators
             </Badge> */}
             
-            <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold text-foreground mb-4 sm:mb-6 font-work-sans leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold text-foreground mb-4 sm:mb-6 font-work-sans leading-tight text-center w-full">
               Studying{" "}
-              <span className="text-secondary mt-2">Simplified</span>
+              <span className="text-secondary italic">Simplified</span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2 text-center w-full">
               Past papers, Resources and More. Made for students, by students
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex justify-center items-center w-full">
               <LiquidGlassButton />
             </div>
           </div>

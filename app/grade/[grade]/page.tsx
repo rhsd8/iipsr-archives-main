@@ -243,7 +243,7 @@ export default function GradePage({ params }: { params: { grade: string } }) {
 
       <div className="container mx-auto px-6 py-12">
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4">
+          <Badge variant="default" className="mb-4">
             Grade {grade} Academic Resources
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-work-sans">Subject Materials</h1>
