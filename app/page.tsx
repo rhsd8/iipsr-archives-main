@@ -45,13 +45,13 @@ export default function HomePage() {
       <header className="sticky top-5 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-primary rounded-lg">
-                <Library className="h-6 w-6 text-primary-foreground" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="p-1.5 sm:p-2 bg-primary rounded-lg">
+                <Library className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground font-work-sans">IIPSR Student Portal</h1>
-                <p className="text-sm text-muted-foreground">Professional Educational Resources</p>
+                <h1 className="text-sm sm:text-lg md:text-xl font-bold text-foreground font-work-sans">IIPSR Student Portal</h1>
+                <p className="text-xs sm:text-sm text-muted-foreground hidden xs:block">Professional Educational Resources</p>
               </div>
             </div>
             <Badge variant="secondary" className="hidden sm:flex">
@@ -61,19 +61,19 @@ export default function HomePage() {
         </div>
       </header>
 
-      <section className="mt-21 py-20 px-6">
+      <section className="mt-12 py-12 px-4 sm:mt-16 sm:py-20 sm:px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16 mt-15">
+          <div className="text-center mb-12 sm:mb-16">
 
             {/* <Badge variant="outline" className="mb-6 text-sm font-medium">
               Trusted by Students & Educators
             </Badge> */}
             
-            <h1 className="text-4xl md:text-7xl font-bold text-foreground mb-6 font-work-sans leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold text-foreground mb-4 sm:mb-6 font-work-sans leading-tight">
               Studying{" "}
               <span className="text-secondary mt-2">Simplified</span>
             </h1>
-            <p className="text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
               Past papers, Resources and More. Made for students, by students
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -84,11 +84,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-12 px-4 sm:py-20 sm:px-6">
         <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 sm:mb-16">
             <div>
-              <h2 className="text-4xl font-bold text-foreground mb-4 font-work-sans">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 font-work-sans">
                 {["Why", "Choose", "Our", "Platform?"].map((word, index) => (
                   <motion.span
                     key={index}
@@ -111,7 +111,7 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className="text-xl text-muted-foreground max-w-2xl mx-auto"
+                className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4"
               >
                 Built with students and educators in mind, our platform delivers exceptional learning experiences.
               </motion.p>
@@ -133,14 +133,14 @@ export default function HomePage() {
                   </div>
                   <div className="flex-grow text-left">
                     <CardTitle className="text-xl font-work-sans leading-tight mb-3">
-                      Comprehensive Coverage
+                      Past Paper Archives
                     </CardTitle>
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="px-8 pb-8 text-left">
                 <p className="text-muted-foreground leading-[1.7] text-base">
-                  Complete academic resources spanning all secondary education levels from Grade 8 through Grade 12.
+                  Grade 8–12 exam papers all in one place — no more digging through sketchy Facebook groups.
                 </p>
               </CardContent>
             </SpotlightCard>
@@ -160,14 +160,14 @@ export default function HomePage() {
                   </div>
                   <div className="flex-grow text-left">
                     <CardTitle className="text-xl font-work-sans leading-tight mb-3">
-                      Subject Organization
+                      Smart Study Timer
                     </CardTitle>
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="px-8 pb-8 text-left">
                 <p className="text-muted-foreground leading-[1.7] text-base">
-                  Systematically organized by subject areas including Mathematics, Sciences, Languages, and Social Studies.
+                  Stay focused with built-in Pomodoro timers and productivity tools that actually make cramming less painful.
                 </p>
               </CardContent>
             </SpotlightCard>
@@ -187,14 +187,14 @@ export default function HomePage() {
                   </div>
                   <div className="flex-grow text-left">
                     <CardTitle className="text-xl font-work-sans leading-tight mb-3">
-                      Secure Access
+                      Curated Study Guides & Courses
                     </CardTitle>
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="px-8 pb-8 text-left">
                 <p className="text-muted-foreground leading-[1.7] text-base">
-                  Reliable Google Drive integration ensures secure storage and instant access to all educational materials.
+                  Step-by-step resources for each grade, designed by real educators to keep you on track.
                 </p>
               </CardContent>
             </SpotlightCard>
@@ -214,14 +214,14 @@ export default function HomePage() {
                   </div>
                   <div className="flex-grow text-left">
                     <CardTitle className="text-xl font-work-sans leading-tight mb-3">
-                      Educator Approved
+                      Timetable Maker & Planner
                     </CardTitle>
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="px-8 pb-8 text-left">
                 <p className="text-muted-foreground leading-[1.7] text-base">
-                  All materials are curated and uploaded by qualified educators ensuring academic quality and relevance.
+                  Build custom schedules and study plans that fit your life (and your procrastination habits).
                 </p>
               </CardContent>
             </SpotlightCard>
@@ -241,14 +241,14 @@ export default function HomePage() {
                   </div>
                   <div className="flex-grow text-left">
                     <CardTitle className="text-xl font-work-sans leading-tight mb-3">
-                      Always Updated
+                      Progress Tracker
                     </CardTitle>
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="px-8 pb-8 text-left">
                 <p className="text-muted-foreground leading-[1.7] text-base">
-                  Regular updates ensure content remains current with educational standards and curriculum requirements.
+                  Visualize your study streaks, goals, and improvements — because nothing feels better than ticking boxes.
                 </p>
               </CardContent>
             </SpotlightCard>
@@ -268,14 +268,14 @@ export default function HomePage() {
                   </div>
                   <div className="flex-grow text-left">
                     <CardTitle className="text-xl font-work-sans leading-tight mb-3">
-                      Easy Navigation
+                      Collaborative Study Hub
                     </CardTitle>
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="px-8 pb-8 text-left">
                 <p className="text-muted-foreground leading-[1.7] text-base">
-                  Intuitive interface design makes finding and accessing specific study materials quick and effortless.
+                  Work with classmates, share notes, and prep together without the chaos of group chats.
                 </p>
               </CardContent>
             </SpotlightCard>
@@ -286,65 +286,72 @@ export default function HomePage() {
 
       
 
-      <footer className="mt-auto backdrop-blur-sm py-12 px-14">
+      <footer className="mt-auto backdrop-blur-sm py-12 px-6 sm:py-16 sm:px-8 md:px-14">
         <div className="mx-auto max-w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          {/* Mobile: Single column with better spacing, Desktop: Two columns */}
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-8 mb-12 md:mb-8">
+            
             {/* Brand Section with Action Buttons */}
-            <div className="space-y-6">
-              <div className="flex items-center gap-3">
+            <div className="space-y-8 md:space-y-6">
+              {/* Logo and Title */}
+              <div className="flex items-center gap-3 justify-center md:justify-start">
                 <div className="p-2 bg-primary rounded-lg">
-                  <Library className="h-6 w-6 text-primary-foreground" />
+                  <Library className="h-5 w-5 md:h-6 md:w-6 text-primary-foreground" />
                 </div>
-                <div>
-                  <h3 className="font-bold text-lg text-foreground">IIPSR Student Portal</h3>
-                  <p className="text-sm text-muted-foreground">Educational Excellence</p>
+                <div className="text-center md:text-left">
+                  <h3 className="font-bold text-lg md:text-xl text-foreground">IIPSR Student Portal</h3>
                 </div>
               </div>
               
-              {/* Action Buttons with liquid glass effect */}
-              <div className="flex flex-wrap gap-3">
-                <button className="liquid-glass inline-flex items-center gap-2 text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300">
+              {/* Action Buttons - Mobile: Vertical stack, Desktop: Horizontal */}
+              <div className="flex flex-col md:flex-row md:flex-wrap gap-4 md:gap-3">
+                <button className="liquid-glass inline-flex items-center justify-center gap-2 text-foreground px-6 py-3 md:px-4 md:py-2 rounded-lg text-sm font-medium transition-all duration-300 min-h-[48px] md:min-h-0">
                   <FileText className="h-4 w-4 relative z-10" />
                   <span className="relative z-10">FAQ's</span>
                 </button>
-                <button className="liquid-glass inline-flex items-center gap-2 text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300">
+                <button className="liquid-glass inline-flex items-center justify-center gap-2 text-foreground px-6 py-3 md:px-4 md:py-2 rounded-lg text-sm font-medium transition-all duration-300 min-h-[48px] md:min-h-0">
                   <Users className="h-4 w-4 relative z-10" />
                   <span className="relative z-10">Feedback</span>
                 </button>
-                <button className="liquid-glass inline-flex items-center gap-2 text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300">
+                <button className="liquid-glass inline-flex items-center justify-center gap-2 text-foreground px-6 py-3 md:px-4 md:py-2 rounded-lg text-sm font-medium transition-all duration-300 min-h-[48px] md:min-h-0">
                   <Shield className="h-4 w-4 relative z-10" />
                   <span className="relative z-10">Contact Us</span>
                 </button>
               </div>
             </div>
 
-            {/* School Website Link */}
-            <div className="space-y-4">
-              <h4 className="font-semibold text-foreground">Institution</h4>
-              <p className="text-sm text-muted-foreground">
-                Visit our main school website for admissions, events, and institutional information.
-              </p>
-              <a 
-                href="https://iipsr.edu.sa/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="liquid-glass inline-flex items-center gap-2 text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
-              >
-                <span className="relative z-10">Visit IIPSR Website</span>
-                <ArrowRight className="h-4 w-4 relative z-10" />
-              </a>
+            {/* Institution Section with proper spacing */}
+            <div className="space-y-6 md:space-y-4 text-center md:text-left">
+              {/* Divider line for mobile visual separation */}
+              <div className="w-16 h-px bg-border/50 mx-auto md:hidden"></div>
+              
+              <div className="space-y-4">
+                <h4 className="font-semibold text-base md:text-lg text-foreground">Institution</h4>
+                <p className="text-sm leading-relaxed text-muted-foreground max-w-sm mx-auto md:mx-0">
+                  Visit our main school website for admissions, events, and institutional information.
+                </p>
+                <a 
+                  href="https://iipsr.edu.sa/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="liquid-glass inline-flex items-center justify-center gap-2 text-foreground px-6 py-3 md:px-4 md:py-2 rounded-lg text-sm font-medium transition-all duration-300 min-h-[48px] md:min-h-0"
+                >
+                  <span className="relative z-10">Visit IIPSR Website</span>
+                  <ArrowRight className="h-4 w-4 relative z-10" />
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* Bottom Section */}
-          <div className="pt-6 border-t border-border/30">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-sm text-muted-foreground">
-                © 2025 IIPSR Student Portal. Educational resources platform.
+          {/* Bottom Section with enhanced spacing */}
+          <div className="pt-8 md:pt-6 border-t border-border/30">
+            <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-4 text-center md:text-left">
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                © 2025 IIPSR Student Portal.
               </p>
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
+              <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <span>Grades 8-12</span>
-                <span>•</span>
+                <span className="text-xs">•</span>
                 <span>Academic Year 2025</span>
               </div>
             </div>
