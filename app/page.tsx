@@ -70,11 +70,11 @@ export default function HomePage() {
             </Badge> */}
             
             <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold text-foreground mb-4 sm:mb-6 font-work-sans leading-tight text-center w-full">
-              Studying{" "}
+              Studying,{" "}
               <span className="text-secondary italic">Simplified</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2 text-center w-full">
-              Past papers, Resources and More. Made for students, by students
+              Past papers, Resources and More. Made for students, by students.
             </p>
             <div className="flex justify-center items-center w-full">
               <LiquidGlassButton />
