@@ -27,7 +27,7 @@ export default function HomePage() {
         </div>
       </header>
 
-      <section className="py-20 px-6">
+      <section className="mt-21 py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 mt-15">
 
@@ -35,14 +35,12 @@ export default function HomePage() {
               Trusted by Students & Educators
             </Badge> */}
             
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 font-work-sans leading-tight">
-              Your Gateway to
-              <span className="text-secondary block mt-2">Academic Excellence</span>
+            <h1 className="text-4xl md:text-7xl font-bold text-foreground mb-6 font-work-sans leading-tight">
+              Studying{" "}
+              <span className="text-secondary mt-2">Simplified</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
-              Access a comprehensive digital library of meticulously organized academic notes and educational materials.
-              Designed for students from Grade 8 to Grade 12, our platform ensures seamless access to high-quality study
-              resources.
+            <p className="text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
+              Past papers, Resources and More. Made for students, by students
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <LiquidGlassButton />
