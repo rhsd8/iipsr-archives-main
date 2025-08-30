@@ -286,65 +286,72 @@ export default function HomePage() {
 
       
 
-      <footer className="mt-auto backdrop-blur-sm py-8 px-4 sm:py-12 sm:px-8 md:px-14">
+      <footer className="mt-auto backdrop-blur-sm py-12 px-6 sm:py-16 sm:px-8 md:px-14">
         <div className="mx-auto max-w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
+          {/* Mobile: Single column with better spacing, Desktop: Two columns */}
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-8 mb-12 md:mb-8">
+            
             {/* Brand Section with Action Buttons */}
-            <div className="space-y-4 sm:space-y-6">
-              <div className="flex items-center gap-2 sm:gap-3">
-                <div className="p-1.5 sm:p-2 bg-primary rounded-lg">
-                  <Library className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-primary-foreground" />
+            <div className="space-y-8 md:space-y-6">
+              {/* Logo and Title */}
+              <div className="flex items-center gap-3 justify-center md:justify-start">
+                <div className="p-2 bg-primary rounded-lg">
+                  <Library className="h-5 w-5 md:h-6 md:w-6 text-primary-foreground" />
                 </div>
-                <div>
-                  <h3 className="font-bold text-base sm:text-lg text-foreground">IIPSR Student Portal</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Educational Excellence</p>
+                <div className="text-center md:text-left">
+                  <h3 className="font-bold text-lg md:text-xl text-foreground">IIPSR Student Portal</h3>
                 </div>
               </div>
               
-              {/* Action Buttons with liquid glass effect */}
-              <div className="flex flex-wrap gap-2 sm:gap-3">
-                <button className="liquid-glass inline-flex items-center gap-1.5 sm:gap-2 text-foreground px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition-all duration-300">
-                  <FileText className="h-3 w-3 sm:h-4 sm:w-4 relative z-10" />
+              {/* Action Buttons - Mobile: Vertical stack, Desktop: Horizontal */}
+              <div className="flex flex-col md:flex-row md:flex-wrap gap-4 md:gap-3">
+                <button className="liquid-glass inline-flex items-center justify-center gap-2 text-foreground px-6 py-3 md:px-4 md:py-2 rounded-lg text-sm font-medium transition-all duration-300 min-h-[48px] md:min-h-0">
+                  <FileText className="h-4 w-4 relative z-10" />
                   <span className="relative z-10">FAQ's</span>
                 </button>
-                <button className="liquid-glass inline-flex items-center gap-1.5 sm:gap-2 text-foreground px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition-all duration-300">
-                  <Users className="h-3 w-3 sm:h-4 sm:w-4 relative z-10" />
+                <button className="liquid-glass inline-flex items-center justify-center gap-2 text-foreground px-6 py-3 md:px-4 md:py-2 rounded-lg text-sm font-medium transition-all duration-300 min-h-[48px] md:min-h-0">
+                  <Users className="h-4 w-4 relative z-10" />
                   <span className="relative z-10">Feedback</span>
                 </button>
-                <button className="liquid-glass inline-flex items-center gap-1.5 sm:gap-2 text-foreground px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition-all duration-300">
-                  <Shield className="h-3 w-3 sm:h-4 sm:w-4 relative z-10" />
+                <button className="liquid-glass inline-flex items-center justify-center gap-2 text-foreground px-6 py-3 md:px-4 md:py-2 rounded-lg text-sm font-medium transition-all duration-300 min-h-[48px] md:min-h-0">
+                  <Shield className="h-4 w-4 relative z-10" />
                   <span className="relative z-10">Contact Us</span>
                 </button>
               </div>
             </div>
 
-            {/* School Website Link */}
-            <div className="space-y-4">
-              <h4 className="font-semibold text-foreground">Institution</h4>
-              <p className="text-sm text-muted-foreground">
-                Visit our main school website for admissions, events, and institutional information.
-              </p>
-              <a 
-                href="https://iipsr.edu.sa/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="liquid-glass inline-flex items-center gap-2 text-foreground px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300"
-              >
-                <span className="relative z-10">Visit IIPSR Website</span>
-                <ArrowRight className="h-4 w-4 relative z-10" />
-              </a>
+            {/* Institution Section with proper spacing */}
+            <div className="space-y-6 md:space-y-4 text-center md:text-left">
+              {/* Divider line for mobile visual separation */}
+              <div className="w-16 h-px bg-border/50 mx-auto md:hidden"></div>
+              
+              <div className="space-y-4">
+                <h4 className="font-semibold text-base md:text-lg text-foreground">Institution</h4>
+                <p className="text-sm leading-relaxed text-muted-foreground max-w-sm mx-auto md:mx-0">
+                  Visit our main school website for admissions, events, and institutional information.
+                </p>
+                <a 
+                  href="https://iipsr.edu.sa/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="liquid-glass inline-flex items-center justify-center gap-2 text-foreground px-6 py-3 md:px-4 md:py-2 rounded-lg text-sm font-medium transition-all duration-300 min-h-[48px] md:min-h-0"
+                >
+                  <span className="relative z-10">Visit IIPSR Website</span>
+                  <ArrowRight className="h-4 w-4 relative z-10" />
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* Bottom Section */}
-          <div className="pt-6 border-t border-border/30">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-sm text-muted-foreground">
-                © 2025 IIPSR Student Portal. Educational resources platform.
+          {/* Bottom Section with enhanced spacing */}
+          <div className="pt-8 md:pt-6 border-t border-border/30">
+            <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-4 text-center md:text-left">
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                © 2025 IIPSR Student Portal.
               </p>
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
+              <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <span>Grades 8-12</span>
-                <span>•</span>
+                <span className="text-xs">•</span>
                 <span>Academic Year 2025</span>
               </div>
             </div>
